@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Simple calculations</title>
+  </head>
+  <body>
+    <div class="container position-relative px-5 pt-2 ebg-light align-items-center mt-5" >
+      <div><button type="button" class="btn btn btn-outline-warning" data-modal-id="modal-1">Reset</button></div>
+   
+
+ 
+      <!-- toggle Hello Guest/guest name text -->
+      <div class="nameDisplay hide position-absolute top-50 " id="idNameDisplay">Hello Guest!</div>
+            <!-- toggle guest name form -->
+        <form id="idNameForm" class="row ">
+          <div class="col-md-6 mb-3">
+            <label for="guest-name" class="col-form-label"
+              ><h1 class="text-secondary">Hello Guest! What is your name</h1></label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="guest-name"
+              name="guest-name"
+            />
+          </div>
+          <div class="col-md-6 mb-3 d-flex align-items-end">
+            <button type="button" class="btn btn-primary" id="btnGo">Go</button>
+          </div>
+        </form>
+       
+      
+    </div>
+
+<!-- Section: Input form start -->
+    <div class="container mt-5 px-5 pb-2 bg-light" >
+
+      <!-- col 1 start -->
+      <div class="row  mb-4">
+        <form class="col-md-6 mb-3 pb-3">
+          <div class="mb-3">
+            <label for="input-num" class="col-form-label"><h2 class="text-success">Enter a number</h2></label>
+            <input
+              type="text"
+              class="form-control"
+              id="input-num"
+              name="input-num"
+            />
+          </div>
+
+          <button
+            title="Get the next prime number"
+            type="button"
+            class="btn btn-primary"
+            id="btnPrime"
+          > is Prime? </button>
+          <button type="button" class="btn btn-primary" id="btnSqrt">Sqrt</button>
+        </form>
+      </div>
+      <!-- Display answer row -->
+      <div class="row  bg-secondary align-items-center" style="height: 65px" ><h2 class =" text-center" id="displayAnswer">
+        Answer</h2>
+      </div>
+    </div> <!-- Section: Input form end -->
+
+
+
+    <script src="/myJS.js"></script>
+    <script
+      src="https://kit.fontawesome.com/89928e2c8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

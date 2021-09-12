@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hide {
+  /* display: none; */
+  visibility: hidden;
+
+  body {
+    margin-top: 35px;
+  }
+}
+div {
+  font-size: 24px;
+}
+
+.originalColor {
+  color: rgb(51, 8, 8);
+  size: 15x;
+}
+
+.nameDisplay {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: steelblue;
+}
